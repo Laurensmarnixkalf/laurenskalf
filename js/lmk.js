@@ -14,6 +14,7 @@ function changeTitle() {
 
 console.log("Proof of concept")
 console.log("doet ie t nou?")
+console.log("github testing")
 
 /*
 .getElementById("banner")
