@@ -4,21 +4,7 @@ body {
   padding-bottom: 20px;
 }
 
-
-.linkedin-link p a {
-  color: #007bb5;
-  font-weight: bold;
-}
 /* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-
-.interests,
-
-.footer {
-  padding-right: 15px;
-  padding-left: 15px;
-  transition: opacity 3s ease-in-out;
-}
 
 /* Custom page header */
 .header {
@@ -31,6 +17,34 @@ body {
   margin-bottom: 0;
   line-height: 40px;
 }
+
+.interests {
+  margin-bottom: 40px;
+  margin: 30px 0;
+}
+
+.strava {
+  color: #FC4C02;
+}
+
+.linkedin {
+  color: #007bb5;
+  font-weight: bold;
+}
+
+.social {
+  color: white;
+}
+
+.footer {
+  color: black;
+  border-top: 1px solid #e5e5e5;
+  padding-top: 19px;
+  padding-right: 15px;
+  padding-left: 15px;
+  transition: opacity 3s ease-in-out;
+}
+
 /* Remove margins and padding from the list, and add a black background color */
 ul.topnav {
     list-style-type: none;
@@ -64,21 +78,15 @@ ul.topnav li.icon {
   display: none;
 }
 
-/* Custom page footer */
-.footer {
-  padding-top: 19px;
-  color: black;
-  border-top: 1px solid #e5e5e5;
-}
-
 
 
 /* Customize container */
 @media all and (min-width: 768px) {
-  .container {
+
+.container {
     padding-right: 30px;
     padding-left: 30px;
-  }
+}
 
 .container-narrow > hr {
   margin: 30px 0;
@@ -107,7 +115,7 @@ ul.topnav li.icon {
 
 /* Supporting interests content */
 .interests {
-  margin: 40px 0;
+  margin: 30px 0;
 }
 .interests p + h4 {
   margin-top: 28px;
@@ -115,6 +123,7 @@ ul.topnav li.icon {
 
 .interests h4:hover {
   color: grey;
+  cursor: pointer;
 }
 
 }
