@@ -39,23 +39,28 @@ function createBackButton() {
 
 
 var titleMap = {
-  psychology:"Psychology is cool",
-  health:"Health is important",
-  sports:"Sports are awesome",
-  tech:"Tech is the shit",
-  design:"Design is for losers",
-  dev:"Development is hard..."
+  psychology:"Psychology",
+  health:"Health",
+  sports:"Sports",
+  tech:"Tech",
+  design:"Design",
+  dev:"Development"
 }
 
 // <br /> this is just to get a line break in the text on the page
 var textMap = {
-  psychology:"<b>Psychology is cool</b><br />\
-  Because here is an interesting text about psychology.",
-  health:"Health is important",
-  sports:"Sports are awesome",
-  tech:"Tech is the shit",
-  design:"Design is for losers",
-  dev:"Development is hard..."
+  psychology:"<b>Psychology</b><br />\
+  Coming soon...",
+  health:"<b>Health</b><br />\
+  Coming soon...",
+  sports:"<b>Sports</b><br />\
+  Coming soon...",
+  tech:"<b>Tech</b><br />\
+  Coming soon...",
+  design:"<b>Design</b><br />\
+  Coming soon...",
+  dev:"<b>Development</b><br />\
+  Coming soon..."
 }
 
 
