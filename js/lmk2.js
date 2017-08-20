@@ -10,3 +10,7 @@ const movingTitles = function () {
     $('#psychology').slideUp(400).show(200);
     console.log('hoi laurens het werkt');
 };
+
+function(){
+console.log('hoi lau')
+};
