@@ -1,0 +1,256 @@
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+p {
+  font-size: 14px;
+  line-height: 200%;
+}
+
+h3 {
+  font-size: 22px;
+  text-align: center;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+
+.container {
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main interests message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+  background-image: /* url('../img/bg-rdam.jpg'); */
+  background-size: 100%;
+  background-color: white;
+  color: black;
+
+}
+.jumbotron .btn {
+  padding: 14px 24px;
+  font-size: 21px;
+}
+
+/* Custom page header */
+.header {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e5e5e5;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+}
+
+.interests p + h4 {
+  margin-top: 28px;
+}
+
+.interests h4:hover {
+  color: grey;
+  cursor: pointer;
+}
+
+.strava {
+  color: #FC4C02;
+  font-weight: bold;
+}
+
+.linkedin {
+  color: #007bb5;
+  font-weight: bold;
+}
+
+.social {
+  color: white;
+}
+
+.footer {
+  color: black;
+  border-top: 1px solid #e5e5e5;
+  padding-top: 19px;
+  padding-right: 15px;
+  padding-left: 15px;
+  position: relative;
+}
+
+/* Remove margins and padding from the list, and add a black background color */
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+/* Float the list items side by side */
+ul.topnav li {float: right;}
+
+/* Style the links inside the list items */
+ul.topnav li a {
+    display: inline-block;
+    color: #2980b9;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of links on hover */
+ul.topnav li a:hover {
+  color: #000;
+}
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.topnav li.icon {
+  display: none;
+}
+
+
+/* Customize container */
+@media all and (min-width: 1200px) {
+
+.introduction {
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-bottom: 15px;
+  margin: 30px;
+  height: 400px;
+  border-bottom: 1px solid #e5e5e5;
+  position: static;
+  /* background-color: pink; */
+}
+
+.image {
+  float: right;
+  padding-right: 25px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+  position: static;
+  display: inline-block;
+}
+
+/* Supporting interests content */
+
+.interests {
+  margin-bottom: 40px;
+  margin: 30px;
+  height: 300px;
+  position: static;
+  /* background-color: lightblue; */
+}
+
+}
+@media all and (max-width: 1200px) {
+  .interests {
+    height: 500px;
+  }
+}
+
+@media all and (max-width: 992px) {
+  .introduction {
+    height: 600px;
+  }
+
+  .image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .interests {
+    height: 550px;
+  }
+}
+
+/* Responsive: Phone sizes */
+@media all and (max-width:768px) {
+  .jumbotron {
+    border-bottom: 0;
+    background-color: white;
+  }
+
+  .introduction {
+    height: 800px;
+  }
+
+  .image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .interests {
+    height: 750px;
+  }
+
+  ul.topnav li {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+  .profile-text {
+    text-align: center;
+  }
+}
+
+/* All of the fadein details for different browsers. Fadein used for jumbotron, .. , */
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
