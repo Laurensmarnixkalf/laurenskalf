@@ -39,7 +39,7 @@
         <li><a href="Contact.html">Contact</a></li>
         <li><a href="about.html">About</a></li>
         <li class="icon">
-          <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+          <a href="javascript:void(0);" onclick="barMenu()">&#9776;</a>
         </li>
       </ul> -->
 
@@ -51,7 +51,8 @@
       </div>
 
       <div class="introduction" id="laurens">
-        <img src="img/L_05.jpg" class="image">
+          <img src="img/L_05.jpg" class="image">
+
           <h3>Hi, my name is Laurens!</h3>
           <p>I like to learn and become better at what I enjoy doing.
             I try to spend most of my days doing exactly that :)
@@ -72,7 +73,7 @@
       <!-- Content of website, all topics with explanations -->
       <div class="interests" id="allTopics">
         <div class="col-lg-6" id="topics">
-          <h4 id="psychology">Psychology</h4>
+          <h4 id="psychology" onclick="movingTitles()">Psychology</h4>
             <p>Clinical-, neuro-, applied-, and sportspsychology. I'm interested in all of it.</p>
 
           <h4 id='health'>Health</h4>
@@ -109,7 +110,7 @@ laurensmarnixkalf" class="strava" target="_blank">Strava</a>.
 
     <!-- Script for responsive top nav -->
     <script>
-function myFunction() {
+function barMenu() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
         x.className += "responsive";
@@ -119,9 +120,9 @@ function myFunction() {
 }
     </script>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) and my own mishaps :D  -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Own JS file lmk.js -->
-    <script src="js/lmk.js"></script>
+    <script src="js/lmk2.js"></script>
   </body>
 </html>
