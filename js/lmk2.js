@@ -2,8 +2,13 @@
 // Some new code, using jQuery for my personal website laurenskalf.nl
 
 $(document).ready(function() {
-    $('#omnes').hide();
-    $('#omnes').fadeIn(800);
+    $('#laurens').hide().delay(500).fadeIn(600);
+    $('#allTopics').hide().delay(1200).fadeIn(800);
+    $('#voetje').hide().delay(1600).fadeIn(800);
+    // $('#laurens').fadeIn(1000);
+    // // $('#banner').fadeIn(2500).delay(800);
+    // $('#allTopics').fadeIn(2500);
+    // $('#voetje').fadeIn(3000);
 });
 
 const movingTitles = function () {
@@ -11,6 +16,8 @@ const movingTitles = function () {
     console.log('hoi laurens het werkt');
 };
 
-function(){
-console.log('hoi lau')
+var hello = function() {
+console.log('hoi lau');
 };
+
+hello ();

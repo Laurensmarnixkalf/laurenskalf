@@ -1,30 +1,9 @@
-/* Space out content a bit */
-.body {
-  padding-top: 20px;
-  padding-bottom: 20px;
 
-}
-
-p {
-  font-size: 14px;
-  line-height: 200%;
-}
-
-h3 {
-  font-size: 22px;
-  text-align: center;
-}
-
-h4 {
-  font-size: 18px;
-}
-
-/* Everything but the jumbotron gets side spacing for mobile first views */
 
 .container {
     padding-right: 30px;
     padding-left: 30px;
-    background-color: white;
+
 }
 
 .container-narrow > hr {
@@ -34,7 +13,7 @@ h4 {
 /* Main interests message and sign up button */
 .jumbotron {
   text-align: center;
-  border-bottom: 1px solid #e5e5e5;
+  /*border-bottom: 1px solid #e5e5e5;*/
   /* background-image: url('../img/b.jpg'); */
   background-size: 100%;
   background-color: white;
@@ -50,7 +29,10 @@ h4 {
 .header {
   padding-bottom: 20px;
   border-bottom: 1px solid #e5e5e5;
+  background-color: grey;
 }
+
+
 /* Make the masthead heading the same height as the navigation */
 .header h3 {
   margin-top: 0;
@@ -58,18 +40,24 @@ h4 {
   line-height: 40px;
 }
 
-.interests p + h4 {
-  margin-top: 28px;
+.introduction {
+  margin-top: 5px;
+  margin-bottom: 40px;
 }
 
-.interests h4:hover {
-  color: grey;
-  cursor: pointer;
+.introduction img {
+  float: right;
+  
 }
 
-.col-lg-6 {
-  background-color: black;
+.introduction p {
+  padding-top: 40px;
 }
+
+.row p + h4 {
+  margin-top: 50px;
+}
+
 
 .strava {
   color: #FC4C02;
@@ -86,11 +74,10 @@ h4 {
 }
 
 .footer {
-  color: red;
-
-  padding-top: 19px;
+  color: black;
+  padding-top: 60px;
   padding-right: 15px;
-  padding-left: 15px;
+
 
 }
 
