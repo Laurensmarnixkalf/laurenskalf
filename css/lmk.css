@@ -1,9 +1,12 @@
-
+h6 {
+  color: rgba(20,20,20,.25);
+  
+}
 
 .container {
     padding-right: 30px;
     padding-left: 30px;
-
+    background-color: white;
 }
 
 .container-narrow > hr {
@@ -47,7 +50,7 @@
 
 .introduction img {
   float: right;
-  
+
 }
 
 .introduction p {

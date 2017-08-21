@@ -3,7 +3,7 @@
 
 $(document).ready(function() {
     $('#laurens').hide().delay(500).fadeIn(600);
-    $('#allTopics').hide().delay(1200).fadeIn(800);
+    $('#interestsContainer').hide().delay(1200).fadeIn(800);
     $('#voetje').hide().delay(1600).fadeIn(800);
     // $('#laurens').fadeIn(1000);
     // // $('#banner').fadeIn(2500).delay(800);

@@ -10,7 +10,7 @@
     <link rel="icon" href="img/b_s.png">
 
     <title>Laurens Marnix Kalf</title>
-
+        <!-- GA Analytics, linked to my personal account -->
         <script>
               (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
               (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -32,29 +32,21 @@
   <body>
 
     <div class="container" id="omnes">
-      <!-- All nav is hidden
-      <ul class="topnav" id="myTopnav">
-      <li><a href="index.html">Laurens Kalf</a></li>
-        <li><a href="#Blog">Blog</a></li>
-        <li><a href="Contact.html">Contact</a></li>
-        <li><a href="about.html">About</a></li>
-        <li class="icon">
-          <a href="javascript:void(0);" onclick="barMenu()">&#9776;</a>
-        </li>
-      </ul> -->
 
-      <!-- Big banner with title -->
+
+      <!-- Big banner with welcome message -->
       <div class="jumbotron" id="banner">
         <h3 id="headline">Laurens Marnix Kalf</h3>
         <br><br>
-        <p class="lead">Psychology, health, sports, tech, design, development.</p>
+        <p class="lead">Hi there, nice to see you!</p>
 
       </div>
-
-      <div class="introduction" id="laurens">
+        <!-- Intro about me :) -->
+        <div class="introduction" id="laurens">
           <!-- <img src="img/L_05.jpg" class="image"> -->
           <img src="img/L_05_edit.png" class="image" id="fotoLaurens">
-          <h3>Hi, my name is Laurens!</h3>
+          <h6>About</h6>
+          <h3>My name is Laurens,</h3>
           <p>I like to learn and become better at what I enjoy doing.
             I try to spend most of my days doing exactly that :)
             * And drinking, preferrably good, coffee while at it *
@@ -69,9 +61,11 @@
             around me.
             I guess for me it is an art to keep a balance in everything I do.</p>
 
-      </div>
+        </div>
 
       <!-- Content of website, all topics with explanations -->
+      <div id="interestsContainer">
+      <h6>Interests</h6>
       <div class="row" id="allTopics">
         <div class="col-md-6" id="topics">
           <h4 id="psychology">Psychology</h4>
@@ -95,31 +89,23 @@
             <p>In everything I do I need to see and experience developement to stay interested. "Stilstand is achteruitgang."</p>
         </div>
       </div>
+    </div>
+      <!-- Footer, also called, voetje ;) get in touch -->
 
       <footer class="footer" id="voetje">
+        <h6>Have a great day! ;)</h6>
         <p>&copy; 2017, Laurens M Kalf.</p><p>I'm on <a href = "http://www.linkedin.com/in/laurenskalf" class="linkedin" target="_blank">LinkedIn</a>, and you can keep track of me at <a href = "https://www.strava.com/athletes/
 laurensmarnixkalf" class="strava" target="_blank">Strava</a>.
         </p>
       </footer>
 
-    </div>
-
-    <!-- Script for responsive top nav -->
-    <script>
-function barMenu() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += "responsive";
-    } else {
-        x.className = "topnav";
-    }
-}
-    </script>
+    </div> <!-- Closing container tag -->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) and my own mishaps :D  -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Own JS file lmk.js -->
+    <!-- Own JS file lmk2.js and Bootstrap's necessary JS file -->
     <script src="js/lmk2.js"></script>
     <script src="js/bootstrap.min.js"></script>
+
   </body>
 </html>
