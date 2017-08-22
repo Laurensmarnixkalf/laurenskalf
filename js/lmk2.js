@@ -2,22 +2,24 @@
 // Some new code, using jQuery for my personal website laurenskalf.nl
 
 $(document).ready(function() {
-    $('#laurens').hide().delay(500).fadeIn(600);
+    $('#introductionContainer').hide().delay(500).fadeIn(600);
     $('#interestsContainer').hide().delay(1200).fadeIn(800);
-    $('#voetje').hide().delay(1600).fadeIn(800);
-    // $('#laurens').fadeIn(1000);
-    // // $('#banner').fadeIn(2500).delay(800);
-    // $('#allTopics').fadeIn(2500);
-    // $('#voetje').fadeIn(3000);
+    $('#workContainer').hide().delay(2000).fadeIn(800);
+    $('#skillsContainer').hide().delay(2000).fadeIn(500);
+    $('#studyContainer').hide().delay(2000).fadeIn(500);
+    $('#voetje').hide().delay(2000).fadeIn(500);
+
 });
 
-const movingTitles = function () {
-    $('#psychology').slideUp(400).show(200);
-    console.log('hoi laurens het werkt');
-};
+// $(window).scroll(function() {
+//   $('#skillsContainer').fadeIn(2000);
+//   $('#skillsContainer').append( "<div>Handler for .scroll() called.</div>" );
+// });
+
+
 
 var hello = function() {
-console.log('hoi lau');
+console.log("Can I help you with something?");
 };
 
 hello ();
