@@ -1,6 +1,6 @@
 h6 {
   color: rgba(20,20,20,.25);
-  
+
 }
 
 .container {
@@ -28,39 +28,78 @@ h6 {
   font-size: 21px;
 }
 
-/* Custom page header */
-.header {
-  padding-bottom: 20px;
-  border-bottom: 1px solid #e5e5e5;
-  background-color: grey;
-}
-
-
-/* Make the masthead heading the same height as the navigation */
-.header h3 {
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 40px;
-}
-
-.introduction {
+#introductionContainer {
   margin-top: 5px;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
 .introduction img {
   float: right;
+  padding-left: 20px;
 
 }
 
 .introduction p {
   padding-top: 40px;
+  text-align: justify;
+}
+
+#interestsContainer {
+  margin-bottom: 100px;
 }
 
 .row p + h4 {
-  margin-top: 50px;
+  padding-top: 10px;
+  margin-top: 30px;
 }
 
+.row {
+  margin-top: 15px;
+}
+
+#workContainer {
+  padding-bottom: 0px;
+  margin-bottom: 60px;
+}
+
+.work img {
+  float:left;
+  padding-top: 20px;
+}
+
+.work p {
+  padding-top: 40px;
+  text-align: justify;
+}
+
+#skillsContainer {
+  padding-bottom: 0px;
+  margin-bottom: 150px;
+}
+
+#studyContainer {
+  margin-bottom: 100px;
+}
+
+.leiden p {
+  padding-top: 40px;
+  text-align: justify;
+}
+
+.leiden img {
+  padding-top: 20px;
+  float: left;
+  padding-right: 20px;
+}
+
+.bangor p {
+  padding-top: 0px;
+}
+
+.bangor img {
+  float: right;
+  padding-left: 20px;
+}
 
 .strava {
   color: #FC4C02;
@@ -72,16 +111,11 @@ h6 {
   font-weight: bold;
 }
 
-.social {
-  color: white;
-}
-
 .footer {
   color: black;
-  padding-top: 60px;
+  margin-top: 100px;
+  padding-bottom: 80px;
   padding-right: 15px;
-
-
 }
 
 /* Remove margins and padding from the list, and add a black background color */
