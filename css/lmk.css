@@ -70,6 +70,7 @@ h6 {
 .work img {
   float:left;
   padding-top: 20px;
+  padding-right: 10px;
 }
 
 .work p {
