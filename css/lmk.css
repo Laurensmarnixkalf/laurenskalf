@@ -57,9 +57,14 @@ h6 {
   margin-top: 15px;
 }
 
+#skillsContainer {
+  padding-bottom: 0px;
+  margin-bottom: 100px;
+}
+
 #workContainer {
   padding-bottom: 0px;
-  margin-bottom: 60px;
+  margin-bottom: 100px;
 }
 
 .work img {
@@ -70,11 +75,6 @@ h6 {
 .work p {
   padding-top: 40px;
   text-align: justify;
-}
-
-#skillsContainer {
-  padding-bottom: 0px;
-  margin-bottom: 150px;
 }
 
 #studyContainer {
