@@ -9,12 +9,10 @@ $(document).ready(function() {
     $('#studyContainer').hide().delay(2000).fadeIn(500);
     $('#voetje').hide().delay(2000).fadeIn(500);
 
+
 });
 
-// $(window).scroll(function() {
-//   $('#skillsContainer').fadeIn(2000);
-//   $('#skillsContainer').append( "<div>Handler for .scroll() called.</div>" );
-// });
+
 
 
 
