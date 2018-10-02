@@ -1,13 +1,14 @@
 body {
   background-color: white;
+  color: black;
 }
 
 h6 {
-  color: rgba(20,20,20,.25);
+  color: rgb(105,105,105);
 }
 
-h6 .darkgrey {
-  color: rgb(105,105,105);
+p {
+  text-align: justify;
 }
 
 .container {
@@ -16,42 +17,30 @@ h6 .darkgrey {
     background-color: white;
 }
 
-.container-narrow > hr {
-  margin: 30px 0;
-}
-
-.jumbotron {
-  text-align: center;
-  /*border-bottom: 1px solid #e5e5e5;*/
-  /* background-image: url('../img/b.jpg'); */
-  background-size: 100%;
-  background-color: white;
-  color: black;
-
-}
-.jumbotron .btn {
-  padding: 14px 24px;
-  font-size: 21px;
-}
-
 #introductionContainer {
-  margin-top: 5px;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+#interestsContainer {
+  margin-bottom: 60px;
+}
+
+#skillsContainer {
+  margin-bottom: 60px;
+}
+
+#workContainer {
   margin-bottom: 60px;
 }
 
 .introduction img {
   float: right;
   padding-left: 20px;
-
 }
 
 .introduction p {
   padding-top: 40px;
-  text-align: justify;
-}
-
-#interestsContainer {
-  margin-bottom: 100px;
 }
 
 .row p + h4 {
@@ -63,50 +52,25 @@ h6 .darkgrey {
   margin-top: 15px;
 }
 
-#skillsContainer {
-  padding-bottom: 0px;
-  margin-bottom: 100px;
-}
-
-#workContainer {
-  padding-bottom: 0px;
-  margin-bottom: 100px;
-}
-
 .work img {
   float:left;
   max-width: 80px;
-  padding-top: 20px;
-  padding-right: 10px;
-}
-
-.work p {
-  padding-top: 40px;
-  text-align: justify;
+  margin-top: 20px;
+  margin-right: 10px;
 }
 
 #studyContainer {
   margin-bottom: 100px;
 }
 
-.leiden p {
-  padding-top: 40px;
-  text-align: justify;
-}
-
 .leiden img {
-  padding-top: 20px;
   float: left;
-  padding-right: 20px;
-}
-
-.bangor p {
-  padding-top: 0px;
+  margin-right: 30px;
 }
 
 .bangor img {
   float: right;
-  padding-left: 20px;
+  margin-left: 15px;
 }
 
 .strava {
@@ -120,8 +84,6 @@ h6 .darkgrey {
 }
 
 .footer {
-  color: black;
   margin-top: 100px;
   padding-bottom: 80px;
-  padding-right: 15px;
 }
