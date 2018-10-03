@@ -22,25 +22,16 @@ p {
   box-shadow: 10px 10px 5px #aaaaaa;
 }
 
-#introductionContainer {
-  margin-top: 30px;
-  margin-bottom: 60px;
-}
-
-#interestsContainer {
-  margin-bottom: 60px;
-}
-
-#skillsContainer {
-  margin-bottom: 60px;
+.container-fluid {
+  margin-bottom: 50px;
 }
 
 .progress-bar {
   transition-duration: 4s;
 }
 
-#workContainer {
-  margin-bottom: 60px;
+.introduction {
+  padding-top: 30px;
 }
 
 .introduction img {
@@ -59,6 +50,25 @@ p {
 
 .row {
   margin-top: 15px;
+}
+
+.polaroid-img {
+  border: 12px solid #fff;
+  border-bottom: 70px solid #fff;
+  -webkit-box-shadow: 3px 3px 3px #888;
+  -moz-box-shadow: 3px 3px 3px #888;
+  box-shadow: 3px 3px 3px #888;
+  height: auto;
+  max-width: 100%;
+}
+
+.polaroid p {
+  color: #888;
+  font: 500 18px/22px Arial, sans-serif;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
 }
 
 .work img {
