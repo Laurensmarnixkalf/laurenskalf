@@ -12,9 +12,14 @@ p {
 }
 
 .container {
-    padding-right: 30px;
-    padding-left: 30px;
-    background-color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 15px;
+  padding-right: 30px;
+  padding-left: 30px;
+  background-color: white;
+  border: 1px solid rgb(228, 226, 226);
+  box-shadow: 10px 10px 5px #aaaaaa;
 }
 
 #introductionContainer {
@@ -28,6 +33,10 @@ p {
 
 #skillsContainer {
   margin-bottom: 60px;
+}
+
+.progress-bar {
+  transition-duration: 4s;
 }
 
 #workContainer {
