@@ -103,6 +103,11 @@ p {
   font-weight: bold;
 }
 
+.social:hover {
+  opacity: 0.5;
+  text-decoration-line: none;
+}
+
 .footer {
   margin-top: 100px;
   padding-bottom: 80px;
