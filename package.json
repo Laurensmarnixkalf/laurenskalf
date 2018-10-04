@@ -1,0 +1,19 @@
+{
+  "name": "laurenskalf-persoonlijke-website",
+  "version": "1.0.0",
+  "description": "Personal Website for Laurens Marnix Kalf",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Laurensmarnixkalf/laurenskalf.git"
+  },
+  "author": "Laurens Marnix Kalf",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Laurensmarnixkalf/laurenskalf/issues"
+  },
+  "homepage": "https://github.com/Laurensmarnixkalf/laurenskalf#readme"
+}
