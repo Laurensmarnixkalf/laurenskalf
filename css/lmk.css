@@ -82,14 +82,10 @@ p {
   margin-bottom: 100px;
 }
 
-.leiden img {
+.study img {
   float: left;
   margin-right: 30px;
-}
-
-.bangor img {
-  float: right;
-  margin-left: 15px;
+  max-width: 80px;
 }
 
 .strava {
@@ -99,6 +95,11 @@ p {
 
 .linkedin {
   color: #007bb5;
+  font-weight: bold;
+}
+
+.instagram {
+  color: #c32aa3;
   font-weight: bold;
 }
 
