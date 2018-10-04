@@ -1,6 +1,37 @@
 // Created by Laurens to learn more about JS and jQuery!
 // Some new code, for my personal website laurenskalf.nl
 
+// JS to trigger barFiller on scroll event
+function debounce(func, wait = 20, immediate = true) {
+    var timeout;
+    return function() {
+      var context = this, args = arguments;
+      var later = function() {
+        timeout = null;
+        if (!immediate) func.apply(context, args);
+      };
+      var callNow = immediate && !timeout;
+      clearTimeout(timeout);
+      timeout = setTimeout(later, wait);
+      if (callNow) func.apply(context, args);
+    };
+  };
+
+  const barsContainer = document.getElementById("skillsContainer");
+
+  function checkSlide() {
+      // Scrollspy to check position of 'bottom of window'
+      let scrollSpy = window.scrollY + window.innerHeight;
+      // Bottom of barsContainer
+      const bottomOfbarsContainer = barsContainer.offsetTop + barsContainer.offsetHeight;
+      if (scrollSpy > bottomOfbarsContainer) {
+        barFiller();
+      };
+  }
+
+  window.addEventListener('scroll', debounce(checkSlide));
+
+// JS to fill the bars gradually
 // Get all the bars 
 var getAllBars = document.getElementById("skillsContainer").querySelectorAll(".progress-bar");  
 // Turn Nodelist into array
@@ -13,5 +44,4 @@ var barFiller = function () {
         arrayOfBars[i].setAttribute('style', `width: ${valueArray[i]}`);
     }
 };
-// Call function to fill bars
-barFiller();
+
