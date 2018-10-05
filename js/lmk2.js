@@ -1,7 +1,16 @@
 // Created by Laurens to learn more about JS and jQuery!
 // Some new code, for my personal website laurenskalf.nl
 
-// JS to trigger barFiller on scroll event
+// JS to trigger actions on scroll event
+let barsFilled = false;
+const barsContainer = document.getElementById("skillsContainer");
+// Nodelist of all images
+const allOpacityImages = document.querySelectorAll(".imageOpacity");
+// Array of all images
+const allOpacityImagesArray = Array.prototype.slice.call(allOpacityImages);
+// Bottom of barsContainer
+const bottomOfbarsContainer = barsContainer.offsetTop + barsContainer.offsetHeight;
+
 function debounce(func, wait = 20, immediate = true) {
     var timeout;
     return function() {
@@ -17,19 +26,27 @@ function debounce(func, wait = 20, immediate = true) {
     };
   };
 
-  const barsContainer = document.getElementById("skillsContainer");
-
-  function checkSlide() {
-      // Scrollspy to check position of 'bottom of window'
-      let scrollSpy = window.scrollY + window.innerHeight;
-      // Bottom of barsContainer
-      const bottomOfbarsContainer = barsContainer.offsetTop + barsContainer.offsetHeight;
-      if (scrollSpy > bottomOfbarsContainer) {
+function checkScrollAndDoStuff() {
+    // Scrollspy to check position of 'bottom of window'
+    let scrollSpy = window.scrollY + window.innerHeight;
+    if (scrollSpy > bottomOfbarsContainer && !barsFilled) {
         barFiller();
-      };
-  }
+        barsFilled = true;
+    } 
+    allOpacityImagesArray.forEach(opacityImage => {
+      // half way through the image
+      const slideInAt = (window.scrollY + window.innerHeight) - opacityImage.height / 2;
+      // bottom of the image
+      const imageBottom = opacityImage.offsetTop + opacityImage.height;
+      const isHalfShown = slideInAt > opacityImage.offsetTop;
+      const isNotScrolledPast = window.scrollY < imageBottom;
+      if (isHalfShown && isNotScrolledPast) {
+        opacityImage.setAttribute('style', `opacity: 1;`);
+      } 
+    });
+}
 
-  window.addEventListener('scroll', debounce(checkSlide));
+window.addEventListener('scroll', debounce(checkScrollAndDoStuff));
 
 // JS to fill the bars gradually
 // Get all the bars 
@@ -44,4 +61,7 @@ var barFiller = function () {
         arrayOfBars[i].setAttribute('style', `width: ${valueArray[i]}`);
     }
 };
+
+
+
 
