@@ -53,22 +53,28 @@ p {
 }
 
 .polaroid-img {
-  border: 12px solid #fff;
-  border-bottom: 70px solid #fff;
-  -webkit-box-shadow: 3px 3px 3px #888;
-  -moz-box-shadow: 3px 3px 3px #888;
-  box-shadow: 3px 3px 3px #888;
+  box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
   height: auto;
   max-width: 100%;
 }
 
 .polaroid p {
-  color: #888;
+  color: white;
+  font-weight: bold;
   font: 500 12px/14px Arial, sans-serif;
   position: absolute;
   bottom: 0;
   text-align: center;
   width: 100%;
+}
+
+.books {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.books img {
+  box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
 }
 
 .work img {
