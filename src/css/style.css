@@ -68,6 +68,9 @@ p {
   margin-top: 20px;
   margin-right: 30px; }
 
+.work p {
+  margin-bottom: 2rem; }
+
 .project img {
   float: right;
   max-width: 250px;
